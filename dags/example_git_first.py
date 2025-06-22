@@ -31,7 +31,7 @@ from airflow.operators.bash import BashOperator
 
 # Define the DAG
 with DAG(
-    dag_id="independent_tasks_dag",
+    dag_id="git_independent_tasks_dag",
     start_date=pendulum.datetime(2023, 1, 1, tz="UTC"),
     catchup=False,
     schedule=None,  # This DAG runs only when manually triggered
